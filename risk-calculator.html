@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Risk Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-landslides.html">About Landslides</a>
+    <a href="risk-calculator.html">Risk Calculator</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Landslide Risk Calculator</h1>
+  </header>
+
+  <main>
+    <form id="riskForm">
+      <label for="rainfall">Rainfall (mm):</label>
+      <input type="number" id="rainfall" required>
+
+      <label for="soilMoisture">Soil Moisture (%):</label>
+      <input type="number" id="soilMoisture" required>
+
+      <label for="groundMovement">Ground Movement (mm):</label>
+      <input type="number" id="groundMovement" required>
+
+      <label for="slope">Slope Angle (degrees):</label>
+      <input type="number" id="slope" required>
+
+      <button type="submit">Calculate Risk</button>
+    </form>
+
+    <h2 id="resultScore"></h2>
+    <h2 id="resultLevel"></h2>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Landslide Risk Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
